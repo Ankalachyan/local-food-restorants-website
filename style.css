@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+map {
+    height: 180px;
+}
+
+@font-face {
+    font-family: "Millimetre";
+    src: url("font/Millimetre-Regular.woff2")
+}
+
+@font-face {
+    font-family: "Karla";
+    src: url("font/karla-regular.woff")
+}
+
+body {
+    font-family: 'Millimetre';
+}
+
+header {
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 12px 30px;
+}
+
+.logo {
+    width: 65px;
+    margin-right: 15px;
+}
+
+.name {
+    color: #F34433;
+    font-size: 26px;
+    font-weight: 100;
+}
+
+footer {
+    width: 100%;
+    background-color: black;
+    color: #fff;
+    padding: 100px;
+    text-align: center;
+}
+
+footer h2 {
+    letter-spacing: 1.25px;
+    font-weight: 100;
+    padding-bottom: 10px;
+    font-family: "Karla";
+}
+
+footer p {
+    letter-spacing: 1px;
+}
+
+.section1 {
+    width: 100%;
+    min-height: 800px;
+    background-image: url(img/logo_background/banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section1 h3 {
+    text-transform: capitalize;
+    font-size: 64px;
+    font-weight: 800;
+    color: #fff;
+    text-shadow: 3px 5px 2px #474747;
+
+}
+
+.imgs {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.intro {
+    margin-top: 65px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.intro h1 {
+    color: rgba(29, 29, 29, 0.66);
+    font-size: 48px;
+    text-transform: uppercase;
+}
+
+.categories {
+    color: rgba(29, 29, 29, 0.66);
+    font-size: 30px;
+    font-family: "Karla";
+    line-height: normal;
+    text-transform: uppercase;
+    margin-top: 19px;
+
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.heading h1 {
+    font-family: 'Karla';
+    color: rgba(29, 29, 29, 0.66);
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.heading h2 {
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    color: rgba(29, 29, 29, 0.66);
+    font-weight: 100;
+}
+
+.meat {
+    background-color: rgb(105, 102, 102);
+    width: 298px;
+    height: 197px;
+    border-radius: 10px;
+    transition: 0.3s;
+    color: rgb(64, 64, 64);
+    cursor: pointer;
+}
+
+.resturantCard {
+    border-radius: 8px;
+    background-color: #414141;
+    width: 390px;
+    padding: 50px;
+    text-align: center;
+    margin: 30px 0;
+    font-family: 'Karla';
+    color: white;
+
+}
+
+.resturantCard img {
+    border-radius: 50%;
+    margin-bottom: 18px;
+
+}
+
+.resturantCard p {
+    text-align: justify;
+    margin-bottom: 16px;
+}
+
+.stars {
+    color: #C28428;
+    margin: 10px 0;
+
+}
+
+.column {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+section {
+    padding: 0 80px;
+}
+
+.feedbackCard {
+    display: flex;
+    background-color: #414141;
+    border-radius: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    font-family: "Karla";
+    color: #fff;
+    text-align: justify;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+.feedbackCard span {
+    font-family: 'Millimetre';
+    color: #9b5959;
+}
+
+.user {
+    text-align: center;
+    margin-right: 30px;
+    color: #57607e;
+    font-weight: 800;
+    font-family: 'Millimetre';
+}
+
+.user img {
+    width: 60px;
+}
+
+.user h2 {
+    font-size: 16px;
+}
+
+.heading img {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.button {
+    appearance: none;
+    background-color: #FFFFFF;
+    border-width: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 1em;
+    margin: 0;
+    opacity: 1;
+    outline: 0;
+    padding: 1.5em 2.2em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-rendering: geometricprecision;
+    text-transform: uppercase;
+    transition: opacity 300ms cubic-bezier(.694, 0, 0.335, 1), background-color 100ms cubic-bezier(.694, 0, 0.335, 1), color 100ms cubic-bezier(.694, 0, 0.335, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    margin-top: 30px;
+}
+
+.button:before {
+    animation: opacityFallbackOut .5s step-end forwards;
+    backface-visibility: hidden;
+    background-color: #EBEBEB;
+    clip-path: polygon(-1% 0, 0 0, -25% 100%, -1% 100%);
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: translateZ(0);
+    transition: clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1), -webkit-clip-path .5s cubic-bezier(.165, 0.84, 0.44, 1);
+    width: 100%;
+}
+
+.button:hover:before {
+    animation: opacityFallbackIn 0s step-start forwards;
+    clip-path: polygon(0 0, 101% 0, 101% 101%, 0 101%);
+}
+
+.button:after {
+    background-color: #FFFFFF;
+}
+
+.button a {
+    z-index: 1;
+    position: relative;
+    text-decoration: none;
+    color: #414141;
+    font-weight: 800;
+}
+
+.resturantCard a {
+    text-decoration: none;
+    color: #e0dfdc;
+    letter-spacing: 1.4px;
+    text-shadow: 3px 5px 2px #000000;
+}
+
+@media (max-width: 800px) {
+    .feedbackCard {
+        display: block;
+    }
+
+    .user {
+        margin: 0;
+    }
+
+    .meat {
+        width: 230px;
+        height: 150px;
+    }
+
+    .intro h1 {
+        font-size: 34px;
+    }
+
+    section {
+        padding: 0 45px;
+    }
+
+    .column {
+        justify-content: space-evenly;
+    }
+}
+
+
+
+@media screen and (max-width: 561px) {
+    .imgs{
+        justify-content: center;
+    }
+}
+
